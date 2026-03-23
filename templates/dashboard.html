@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h2>📊 Processing Dashboard</h2>
+
+        <div class="status {% if summary.errors %}error{% else %}success{% endif %}">
+            {{ summary.status }}
+        </div>
+
+        <div class="card">
+            <p><strong>Original Rows:</strong> {{ summary.original_rows }}</p>
+            <p><strong>Processed Rows:</strong> {{ summary.processed_rows }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Columns</h3>
+            <ul>
+                {% for col in summary.columns %}
+                <li>{{ col }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Errors</h3>
+
+            {% if summary.errors %}
+                <ul>
+                    {% for err in summary.errors %}
+                    <li>{{ err }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No issues found ✅</p>
+            {% endif %}
+        </div>
+
+        <a href="{{ url_for('download_file', filename=filename) }}">
+            ⬇ Download Cleaned File
+        </a>
+
+    </div>
+</body>
+</html>
