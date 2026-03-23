@@ -8,7 +8,7 @@ Users can upload raw datasets and instantly receive structured, cleaned outputs 
 ## 🚀 Live Demo
 Link: [Automated Data Processing System](https://data-processing-system.onrender.com)
 
-![Homepage]("C:\Users\Coding_cadet\Downloads\Data_process_1.png")
+![Homepage](Demo_output/Data_process_1)
 
 ---
 
