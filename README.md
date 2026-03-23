@@ -59,9 +59,13 @@ This system automates the entire pipeline:
 
 data-processing-system/
  ─ app.py
+ 
  ─ requirements.txt
+ 
  ─ Procfile
+ 
  ─ runtime.txt 
+ 
  ─ utils/
      ─ data_cleaning.py
      ─ validation.py
@@ -70,6 +74,7 @@ data-processing-system/
   ─ templates/
      ─ index.html
      ─ dashboard.html
+     
 ─ static/
      ─ style.css
 
