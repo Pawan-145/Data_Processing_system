@@ -58,25 +58,20 @@ This system automates the entire pipeline:
 ## 📁 Project Structure
 
 data-processing-system/
-│
-├── app.py
-├── requirements.txt
-├── Procfile
-├── runtime.txt
-│
-├── utils/
-│ ├── data_cleaning.py
-│ ├── validation.py
-│ ├── processing.py
-│
-├── templates/
-│ ├── index.html
-│ ├── dashboard.html
-│
-├── static/
-│ ├── style.css
-
-
+ ─ app.py
+ ─ requirements.txt
+ ─ Procfile
+ ─ runtime.txt 
+ ─ utils/
+     ─ data_cleaning.py
+     ─ validation.py
+     ─ processing.py
+     
+  ─ templates/
+     ─ index.html
+     ─ dashboard.html
+─ static/
+     ─ style.css
 
 ---
 
