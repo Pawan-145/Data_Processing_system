@@ -10,6 +10,8 @@ Link: [Automated Data Processing System](https://data-processing-system.onrender
 
 ![Homepage](Demo_output/Data_process_1.png)
 
+![Homepage](Demo_output/Data_process_2.png)
+
 ---
 
 ## 🧠 Problem Statement
